@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- android:enabled="true" is Shown by activity
+       android:icon using internal icon i.e add to add the new note
+       represents add function
+         Resource ID. A unique resource ID. To create a new resource ID for this item, use the form: "@+id/name".
+          The plus symbol indicates that this should be created as a new ID.
+       android:orderInCategory is lowest the number higher in category
+       app:showAsAction="always" shows the button and ifRoom hides it
+       -->
+    <item
+        android:id="@+id/action_add1"
+        android:icon="@drawable/ic_action_add"
+        android:orderInCategory="100"
+        android:title="action_add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_delete1"
+        android:icon="@drawable/ic_action_delete"
+        android:orderInCategory="100"
+        android:title="action_delete"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_search1"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:title="search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="settings"
+        app:showAsAction="ifRoom"/>
+</menu>
+    <!--Menus are additional options that are displayed by clicking the menu button of mobile
+        Menus are a common user interface component in many types of applications.
+        -->

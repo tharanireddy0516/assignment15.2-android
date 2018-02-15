@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--CoordinatorLayout is a super-powered FrameLayout.
+  A Toolbar is a generalization of action bars for use within application layouts.
+  Floating action buttons are used for a special type of promoted action.
+  AppBarLayout is a vertical LinearLayout which implements many of the features of material designs app bar concept, namely scrolling gestures.
+  ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+  When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+  as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+  it very often
+  wrap_content tells your view to size itself to the dimensions required by its content.
+  match_parent tells your view to become as big as its parent view group will allow.
+  TextSize will give size of the text-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.androidversions.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
